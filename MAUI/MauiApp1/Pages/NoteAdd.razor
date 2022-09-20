@@ -3,36 +3,31 @@
 
 <h3>NoteAdd</h3>
 
-<p>
-    <label>Title
-    </label>
-</p>
-
-<p>
-    <label>
-        Message
-    </label>
-</p>
-
-<button class="btn btn-primary" @onclick="AddNote">Add Note</button>
+<EditForm Model="@note" OnValidSubmit="@AddNote">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <p>
+        <label>Title:
+            <InputText id="title" @bind-Value="note.Title" />
+        </label>
+    </p>
+    <p>
+        <label>
+            Message:
+            <InputText id="Message" @bind-Value="note.Message" />
+        </label>
+    </p>
+    <button type="submit">Submit</button>
+</EditForm>
 
 @code {
-    /// <summary>
-    /// The <see cref="Note"/> to upsert.
-    /// </summary>
-    //[Parameter]
-    //public static Note? Note { get; set; }
 
-    private static void AddNote()
+    private Note note = new();
+
+    private void AddNote()
     {
         using var context = new DemoDBContext();
-        
-        var note = new Note
-            {
-                Title = "Title1",
-                Message = "Message1"
-            };
-
+        context.Add(note);
         context.SaveChangesAsync();
     }
 
