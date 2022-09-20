@@ -16,7 +16,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiApp1", "MAUI\MauiApp1\M
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Blazor", "Blazor", "{F9DCC263-294E-4A39-90C0-482E5EEEFBC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorServerApp", "Blazor\BlazorServerApp\BlazorServerApp.csproj", "{62E5B4A0-DC0D-4269-941F-39723D2A4B9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorServerApp", "Blazor\BlazorServerApp\BlazorServerApp.csproj", "{62E5B4A0-DC0D-4269-941F-39723D2A4B9F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{1BF94B56-5351-45DD-918E-C5C73F7A184F}"
 	ProjectSection(SolutionItems) = preProject
