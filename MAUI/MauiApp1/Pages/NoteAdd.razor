@@ -1,5 +1,6 @@
 ﻿@page "/noteadd"
 @using MauiApp1.Data
+@inject NavigationManager NavigationManager
 
 <h3>NoteAdd</h3>
 
@@ -29,7 +30,9 @@
         using var context = new DemoDBContext();
         context.Add(note);
         context.SaveChangesAsync();
+        NavigationManager.NavigateTo("/notelist");
     }
-
+    
     //https://learn.microsoft.com/en-us/ef/core/get-started/xamarin
+    //https://www.c-sharpcorner.com/article/crud-operations-using-blazor-net-6-0-entity-framework-core/
 }
