@@ -1,0 +1,41 @@
+﻿@page "/notelist"
+@using MauiApp1.Data
+
+<h3>Notes</h3>
+
+@if (_notes == null)
+{
+	<p><em>Loading...</em></p>
+}
+else
+{
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Title</th>
+				<th>Message</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var note in _notes)
+			{
+				<tr>
+					<td>@note.NoteId</td>
+					<td>@note.Title</td>
+					<td>@note.Message</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+}
+
+@code {
+    private List<Note> _notes;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await using var context = new DemoDBContext();
+        _notes = context.Notes.ToList();
+    }
+}

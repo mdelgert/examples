@@ -1,0 +1,40 @@
+﻿@page "/noteadd"
+@using MauiApp1.Data
+
+<h3>NoteAdd</h3>
+
+<p>
+    <label>Title
+    </label>
+</p>
+
+<p>
+    <label>
+        Message
+    </label>
+</p>
+
+<button class="btn btn-primary" @onclick="AddNote">Add Note</button>
+
+@code {
+    /// <summary>
+    /// The <see cref="Note"/> to upsert.
+    /// </summary>
+    //[Parameter]
+    //public static Note? Note { get; set; }
+
+    private static void AddNote()
+    {
+        using var context = new DemoDBContext();
+        
+        var note = new Note
+            {
+                Title = "Title1",
+                Message = "Message1"
+            };
+
+        context.SaveChangesAsync();
+    }
+
+    //https://learn.microsoft.com/en-us/ef/core/get-started/xamarin
+}
