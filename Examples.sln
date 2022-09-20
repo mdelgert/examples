@@ -14,6 +14,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiApp1", "MAUI\MauiApp1\MauiApp1.csproj", "{9F4E16F6-7C8F-4F24-8ED6-2F9CC94E8299}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Blazor", "Blazor", "{F9DCC263-294E-4A39-90C0-482E5EEEFBC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorServerApp", "Blazor\BlazorServerApp\BlazorServerApp.csproj", "{62E5B4A0-DC0D-4269-941F-39723D2A4B9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWebApp", "BlazorWebApp\BlazorWebApp.csproj", "{EC8DBDBA-1DF6-458A-B935-ADE86246DE2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,12 +32,22 @@ Global
 		{9F4E16F6-7C8F-4F24-8ED6-2F9CC94E8299}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F4E16F6-7C8F-4F24-8ED6-2F9CC94E8299}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9F4E16F6-7C8F-4F24-8ED6-2F9CC94E8299}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{62E5B4A0-DC0D-4269-941F-39723D2A4B9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62E5B4A0-DC0D-4269-941F-39723D2A4B9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62E5B4A0-DC0D-4269-941F-39723D2A4B9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62E5B4A0-DC0D-4269-941F-39723D2A4B9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC8DBDBA-1DF6-458A-B935-ADE86246DE2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC8DBDBA-1DF6-458A-B935-ADE86246DE2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC8DBDBA-1DF6-458A-B935-ADE86246DE2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC8DBDBA-1DF6-458A-B935-ADE86246DE2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9F4E16F6-7C8F-4F24-8ED6-2F9CC94E8299} = {441DD2C8-C3E0-4366-957F-005A24FAD4BF}
+		{62E5B4A0-DC0D-4269-941F-39723D2A4B9F} = {F9DCC263-294E-4A39-90C0-482E5EEEFBC7}
+		{EC8DBDBA-1DF6-458A-B935-ADE86246DE2A} = {F9DCC263-294E-4A39-90C0-482E5EEEFBC7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AA0D97A1-B2B9-4A2D-BB37-0128D1BF225F}
