@@ -16,7 +16,7 @@ namespace MauiApp1.Data
         {
             //SQLitePCL.Batteries_V2.Init();
             //Database.EnsureDeleted();
-            Database.EnsureCreated();
+            //Database.EnsureCreated();
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

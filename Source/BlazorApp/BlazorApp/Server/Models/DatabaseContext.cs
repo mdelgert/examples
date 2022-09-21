@@ -7,7 +7,7 @@ namespace BlazorApp.Server.Models
     {
         public DatabaseContext()
         {
-            
+            //Database.EnsureCreated();
         }
 
         public DatabaseContext(DbContextOptions<DatabaseContext> options)
