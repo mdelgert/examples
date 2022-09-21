@@ -1,0 +1,11 @@
+﻿@page "/bootstrap"
+@inject IJSRuntime JS
+
+<h3>BootStrap</h3>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        await JS.InvokeVoidAsync("alert", "Hello world");
+    }
+}
